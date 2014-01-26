@@ -6,11 +6,8 @@ use Test::More 'no_plan';
 
 
 sub fizzbuzz {
-    my $array = [];
-    for my $number (@_) {
-        push($array, &convert($number));
-    }
-    return $array;
+    my @results = map { my $n = $_; $n = &convert($n); $n } @_;
+    return \@results;
 }
 
 sub convert {
