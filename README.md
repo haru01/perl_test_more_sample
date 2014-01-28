@@ -7,7 +7,6 @@
     gem install guard-shell
     guard
 
-
 ## memo
 
     plenv install --list
@@ -18,3 +17,6 @@
     plenv exec cpanm Carton
     plenv exec carton install
     plenv exec prove
+
+
+- https://www.diigo.com/user/haru01/perl

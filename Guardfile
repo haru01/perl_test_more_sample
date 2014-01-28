@@ -4,6 +4,6 @@
 
 guard :shell do
   watch /(.*\.t)/ do |m|
-    `prove -lvr t`
+    `prove t`
   end
 end

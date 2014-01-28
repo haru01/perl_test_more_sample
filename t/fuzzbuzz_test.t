@@ -3,7 +3,7 @@ package FuzzBuzz;
 use strict;
 use warnings;
 use Test::More 'no_plan';
-
+# use Test::Pretty;
 
 sub fizzbuzz {
     my @results = map { my $n = $_; $n = &convert($n); $n } @_;
@@ -18,7 +18,7 @@ sub convert {
     return $num;
 }
 
-subtest "fizzbuzz" => sub{
+subtest "fizzbuzz" => sub {
     subtest "fizzbuzz配列に変換できること" => sub {
         is_deeply(&fizzbuzz(1..15),
                         [1, 2, "Fizz", 4, "Buzz",
